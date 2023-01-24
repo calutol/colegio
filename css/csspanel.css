@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100;200;300;400;600;700;800;900&family=Lilita+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Paletas de colores */
+:root {
+	--morado-gra: linear-gradient(42deg, rgba(135,76,182,1) 0%, rgba(72,11,164,1) 100%);
+	--morado: rgb(88 28 169);
+	--blanco: #fff;
+	--text-nav: #fff;
+	--hover-content: #fff;
+	--text-hover: #d5adff;
+	--text-focus: #333;
+	--focus-content: #fff;
+	--main-content: #f0f1f3;
+}
+
+/* Contenedor General */
+.contenedor {
+	width: 100%;
+	position: relative;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Aside Lateral */
+.aside {
+	position: fixed;
+	width: 240px;
+	height: 100%;
+	background-color: var(--morado);
+	background: var(--morado-gra);
+	transition: all .5s;
+	overflow: hidden;
+}
+.aside__nav {
+}
+.aside__li {
+	display: flex;
+	align-items: center;
+	position: relative;
+	min-height:60px: ;
+	height: 60px;
+	width: 100%;
+	margin-left: .5rem ;
+}
+.aside__li:hover,
+.aside__li.hovered {
+	background: var(--main-content);
+	border-radius: 30px 0px 0px 30px;
+}
+.aside__li:nth-child(1) {
+	pointer-events: none;	
+}
+.aside__li:nth-child(3) {
+	pointer-events: none;
+}
+.aside__a {
+	color: var(--text-nav);
+	display: flex;
+	align-items: center;
+	transition: all .2s;
+}
+.aside__li:hover .aside__a,
+.aside__li.hovered .aside__a {
+	color: var(--morado);
+	font-weight: 600;
+	font-size: 18px;
+}
+.aside__abrand{
+	padding-top: 18px;
+    text-align: center;
+	text-transform: uppercase;
+    letter-spacing: .05rem;
+	font-weight: 800;
+}
+.aside__hr{
+	margin: .5rem 0;
+	border-color: rgb(255 248 248 / 56%);
+}
+.aside__brand{
+	font-size: 2rem;
+}
+.aside__icon{
+	width: 50px;
+	text-align: center;
+}
+.aside__info{
+	text-align: start;
+	white-space: nowrap;
+}
+
+/* Curvas li aside */
+.aside__li:hover .aside__a::before,
+.aside__li.hovered .aside__a::before {
+	content: '';
+	position: absolute;
+	right: .5rem;
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	z-index: 1;
+	border-radius: 50%;
+	box-shadow: 35px 35px 0 10px var(--main-content);
+
+}
+.aside__li:hover .aside__a::after,
+.aside__li.hovered .aside__a::after {
+	content: '';
+	position: absolute;
+	right: .5rem;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	z-index: 1;
+	border-radius: 50%;
+	box-shadow: 35px -35px 0 10px var(--main-content);
+}
+
+/* Focus Nav */
+.aside__li:focus-within {
+	border-radius: 30px 0px 0px 30px;
+	background: var(--main-content);
+	transition: all .2s;
+}
+.aside__li:focus-within .aside__a {
+	color: var(--morado);
+	font-size: 18px;
+	font-weight: 600;
+}
+.aside__li:focus-within .aside__a::before {
+	content: '';
+	position: absolute;
+	right: .5rem;
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	z-index: 1;
+	border-radius: 50%;
+	box-shadow: 35px 35px 0 10px var(--main-content);
+
+}
+.aside__li:focus-within .aside__a::after {
+	content: '';
+	position: absolute;
+	right: .5rem;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	z-index: 1;
+	border-radius: 50%;
+	box-shadow: 35px -35px 0 10px var(--main-content);
+
+}
+
+/* Main */
+.main {
+	position: absolute;
+	width: calc(100% - 240px);
+	left: 240px;
+	min-height: 100vh;
+	background-color: var(--main-content);
+}
+.main__topnav {
+	z-index: 1;
+	*overflow: hidden;
+	width: 100%;
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	padding: 0rem 1rem;
+	background-color: var(--blanco);
+
+}
+/* Menu desplegable nav Side */
+.main__toggle {
+	position: relative;
+	padding: .7rem;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 3rem;
+	cursor: pointer;
+}
+.main__toggle-rotate {
+	transform: rotate(90deg);
+	transition: all .5s ease;
+}
+/* Galletica Nav */
+.main__galletica{
+	position: relative;
+	padding: .7rem;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 1rem;
+}
+
+/* Perfil Usuario Nav */
+.perfil-usuario{
+	position: relative;
+}
+.profile-details{
+	display: flex;
+	align-items: center;
+	min-width: 190px;
+	overflow: hidden;
+	cursor: pointer;
+}
+/*.profile-details__img{
+	width: 40px;
+	height: 40px;
+	background-color: silver;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.1);
+}*/
+.profile-details__user{
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0px 8px;
+	white-space: nowrap;
+}
+.box{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.box::before{
+	content: '';
+	position: absolute;
+	inset: -10px 14px;
+	background: linear-gradient(315deg, #dee2e6, #e9ecef);
+	transition: 0.5s;
+	animation: animate 4s linear infinite;
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.box::after{
+	content: '';
+	position: absolute;
+	inset: 2px;
+	background: white;
+	border-radius: 50%;
+	z-index: 1;
+}
+.contentlol{
+	position: absolute;
+	inset: 2px;
+	border: 2px solid white;
+	z-index: 3;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.contentlol img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* Menu drop */
+.profile-details i{
+	transition: all .5s;
+}
+.dropdowni.active-dropdowni_menu .dropdowni__down{
+	transform: rotate(180deg);
+}
+.dropdowni_menu{
+	z-index: 2;
+	background-color: var(--blanco);
+	border: 1px solid #dee2e6;
+	border-radius: 0.375rem;
+}
+.dropdowni.active-dropdowni_menu .dropdowni_menu{
+	transition: all .2s;
+}
+.dropdowni_menu__hr{
+	margin: 0px;
+	border-color: #adb5bd;
+}
+.dropdowni_menu__a{
+	padding: 1rem 1.8rem;
+}
+.dropdowni_menu__a:active{
+	color: var(--text-nav);
+	background-color: var(--morado);
+}
+.dropdowni_menu__a i{
+	margin-right: 10px;
+}
+.dropdowni_menu__a:hover{
+	font-size: 17px;
+}
+/* Galletica */
+.main__galletica{
+	display: flex;
+	align-items: center;
+}
+.main__galletica-img{
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+.main__galletica-frases{
+	font-size: .8rem;
+	white-space: nowrap;
+}
+

@@ -338,7 +338,29 @@
 
 }
 @media (max-width:576px) {
-
+	.aside{
+		left: -240px;
+	}
+	.aside.active-tam{
+		width: 240px;
+		left: 0px;
+	}
+	.main{
+		width: 100%;
+		left: 0;
+	}
+	.main.active-tam{
+		left: 240px;
+	}
+	.main__galletica{
+		display: none;
+	}
+	.profile-details__user{
+		display: none;
+	}
+	.profile-details{
+		min-width: 0;
+	}
 }
 
 

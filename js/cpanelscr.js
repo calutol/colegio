@@ -8,7 +8,7 @@ function activeLink(){
 list.forEach((item) =>
   item.addEventListener('mouseover',activeLink));
 
-// Animacion icono de Menu usuario topnav //
+// ** Animacion icono de Menu usuario topnav ** //
 function check_abrir(x, y){
   if(x == 1){
     $(".dropdowni").toggleClass("active-dropdowni_menu")
@@ -37,7 +37,7 @@ $(".dropdowni_menu").attrchange({
 let dropdowni_menu = document.querySelector('.dropdowni');
 
 
-// Menu desplegable ASIDE y BOTON TOGGLE topnav //
+// ** Menu desplegable ASIDE y BOTON TOGGLE topnav ** //
 let main__toggle = document.querySelector('.main__toggle');
 let aside = document.querySelector('.aside');
 let main = document.querySelector('.main');

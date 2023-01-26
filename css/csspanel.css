@@ -326,7 +326,63 @@
 	font-size: .8rem;
 	white-space: nowrap;
 }
+.main__navbar-logo-movil{
+	display: none;
+}
+.main__navbar-logo-movil__img{
+	width: 40px;
+	height: auto;
+	opacity: .8;
+}
+.main__notificaciones{
+	position: relative;
+	display: flex;
+	justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
 
+.main__notificaciones i{
+	font-size: 24px;
+}
+.main__notificaciones-radius{
+	position: absolute;
+    top: -4px;
+    right: 0;
+}
+.main__notificaciones-radius i{
+	font-size: 10px;
+	color: #914af7;
+}
+/* ESTATUS DE NOTIFIACIONES */
+.main__notificaciones-radius.active i{
+	color: #47d493;
+}
+.main__navbar-whapp{
+	font-size: 24px;
+	position: relative;
+}
+.tarjeta0{
+
+}
+.tarjeta1 {
+    height: 29px;
+    width: 20px;
+    background-color: #ed5959;
+    border-radius: 2px;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid #3b3b3b;
+}
+.tarjeta2 {
+    height: 29px;
+    width: 20px;
+    background-color: #ffff8d;
+    border-radius: 2px;
+    margin-left: 5px;
+    transform: rotate(12deg);
+    border: 1px solid #3b3b3b;
+}
 /* Responsive */
 @media (max-width:1400px) {
 
@@ -360,6 +416,12 @@
 	}
 	.profile-details{
 		min-width: 0;
+	}
+	.main__navbar-logo-movil{
+		display: block;
+		position: relative;
+		display: flex;
+		align-items: center;
 	}
 }
 

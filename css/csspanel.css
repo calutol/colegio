@@ -370,16 +370,16 @@
 
 }
 .tarjeta1 {
-    height: 29px;
+    height: 27px;
     width: 20px;
-    background-color: #ed5959;
+    background-color: #ff8686;
     border-radius: 2px;
     z-index: 1;
     position: absolute;
     border: 1px solid #3b3b3b;
 }
 .tarjeta2 {
-    height: 29px;
+    height: 27px;
     width: 20px;
     background-color: #ffff8d;
     border-radius: 2px;
@@ -400,6 +400,65 @@
 .v-mobil__categoria{
 	font-size: 12px;
 	color: #914af7;
+}
+/* Contenido general de la web */
+.main__body{
+	overflow: hidden;
+}
+.main__body-nuevo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.main__body-nuevo-txt{
+	border: 6px dashed #ced4da;
+	text-align: center;
+	padding: 3rem 8rem;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #ced4da;
+	text-shadow: #e0e0e0 1px 1px 0;
+}
+/* Modal */
+.modal-content{
+	border-radius: 0.75em;
+}
+.modal-header{
+	border-bottom: 2px solid #dee2e6;
+}
+.modal-footer{
+	border-top: 2px solid #dee2e6;
+}
+.modal{
+	background-color: rgb(143 13 253 / 9%);
+}
+.main__body-modal-body {
+	padding: 2rem 3rem 3rem 2rem;
+}
+.main__body-body-input{
+	border-radius: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+}
+.main__body-label-textarea{
+	height: 100px;
+}
+.main__body__modal-search{
+ 	position: relative;
+}
+.main__body__modal-search i{
+	position: absolute;
+    bottom: 6px;
+    left: 12px;
+    color: #9fa2a4;
+    font-size: 22px;
+}
+.main__body .form-control{
+	border: 2px solid #dee2e6;
 }
 /* Responsive */
 @media (max-width:1400px) {
@@ -461,6 +520,10 @@
 	}
 	.dropdowni_menu__hr-mobil{
 		display: block;
+	}
+	.main__body-nuevo-txt{
+		padding: 2rem 2rem;
+    	font-size: 2rem;
 	}
 }
 

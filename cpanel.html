@@ -145,15 +145,87 @@
         </div>
         <!-- content -->
         <div class="container main__body">
+          <!-- Estructura main -->
+          <div class="container index-reporte">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="index-reporte__reportes">
+                  <div class="index-reporte__tittle">
+                    <h3 class="index-reporte__reportes-h3">Acta de incidencias del docente</h3>
+                    <span class="tt" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Agregar nueva acta">
+                      <a class="nav-link index-reporte__tittle-a" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                      </svg>
+                    </a> 
+                    </span>     
+                  </div>
+                  <div class="index-reporte__card-content">
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill rojo"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill verde"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill amarillo"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill rojo"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill verde"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill amarillo"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill rojo"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                    <div class="index-reporte__agg-card">
+                      <i class="bi bi-circle-fill verde"></i>
+                      <span class="index-reporte__agg-card-estudiante">Otto Gonzalez</span>
+                      <span class="index-reporte__agg-card-fecha">01/29/2023</span>
+                    </div>
+                  </div>
+                  <div class="index-reporte_footer text-center">
+                    <a class="nav-link tt" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="index-reporte-inf">
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
           <!-- Generar reporte -->
-          <div class="main__body-nuevo">
+          <!--<div class="main__body-nuevo">
             <a class="nav-link" type="button" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
              <div class="main__body-nuevo-txt"><i class="fa-solid fa-circle-plus"></i> Crear Reporte</div>
             </a>
-          </div>
+          </div>-->
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-lg main__body-modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
@@ -162,7 +234,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body main__body-modal-body">
-                  <!-- Cuerpo del main -->
+                  -- Cuerpo del main --
                   <form class="row g-3 needs-validation" novalidate>
                     <div class="main__body__modal-search">
                       <span class="main__body__modal-search">
@@ -202,17 +274,10 @@
                         <label for="floatingTextarea">Escriba el motivo (Opcional)</label>
                       </div>
                    </div>
-                   <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                  </div>
                   </form>
-
-
-
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Understood</button>
+                  <button class="btn btn-primary modal-footer__btn" type="submit">Aceptar</button>
                 </div>
               </div>
             </div>

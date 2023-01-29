@@ -460,6 +460,12 @@
 .main__body .form-control{
 	border: 2px solid #dee2e6;
 }
+.main__body-modal-check{
+	margin: 1.5rem 0rem .5rem 0rem;
+}
+.main__body-modal-check-span{
+	margin-right: 10px;
+}
 /* Responsive */
 @media (max-width:1400px) {
 	.v-mobil__box{
@@ -524,6 +530,13 @@
 	.main__body-nuevo-txt{
 		padding: 2rem 2rem;
     	font-size: 2rem;
+	}
+	.main__body-modal-body{
+		padding: 2rem 1rem 2rem 1rem;
+	}
+	.main__body-modal-check{
+		display: inline-flex;
+
 	}
 }
 

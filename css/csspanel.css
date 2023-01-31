@@ -733,6 +733,19 @@
 	}
 	.index-reporte-inf{
 		min-height: 468px;
+		margin-bottom: var(--margin-top);
+	}
+	.index-reporte_footer a{
+		padding: 1rem 0rem;
+	}
+	.index-reporte-inf-content__box-top-sub{
+		font-size: 14px;
+	}
+	.box__tramite-completo{
+		padding-right: .5rem;
+	}
+	.iricbotf__data{
+		text-align: initial !important;
 	}
 }
 

@@ -148,6 +148,7 @@
           <!-- Estructura main -->
           <div class="container index-reporte">
             <div class="row">
+              <!-- Seccion uno -->
               <div class="col-lg-5">
                 <div class="index-reporte__reportes">
                   <div class="index-reporte__tittle">
@@ -230,11 +231,32 @@
                   </div>
                 </div>
               </div>
+              <!-- Seccion dos -->
               <div class="col-lg-7">
                 <div class="index-reporte-inf">
                   <div class="index-reporte-inf-title">
                     <h3 class="index-reporte-inf-title-h3">Detalle del proceso</h3>
-                    <a class="nav-link" href=""><i class="fa-solid fa-expand"></i></a>
+                    <span class="tt" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Expandir">
+                      <a class="nav-link" href="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expandir-detalle"><i class="fa-solid fa-expand"></i></a>
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="expandir-detalle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="index-reporte-inf-content">
                     <div class="index-reporte-inf-content__box-top">
@@ -283,6 +305,12 @@
                             </div>
                           </div>
                         </div>
+                        <div class="container">
+                          <div class="iricbotf-detalle-motivo">
+                            <span class="iricbotf-detalle-motivo__title">Contexto:</span>
+                            <span class="iricbotf-detalle-motivo__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eos quas natus exercitationem dignissimos quod minima, officiis hic deleniti dolorum ducimus, in vitae impedit expedita facilis! Hic voluptatum, minima et.</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <!-- contenido detalle -->
@@ -290,6 +318,25 @@
                       <div class="box-inf-content-index">
                         <!-- caja de proceso -->
                           <div class="status-report-details">
+                            <div class="container text-center">
+                              <div class="row">
+                                <div class="col-lg col">
+                                 
+                                  <div class="progreso-g">
+                                    <div class="progreso-contenedor">
+                                      <div class="progreso" id="progreso"></div>
+                                      <div class="circle active-i">1</div>
+                                      <div class="circle">2</div>
+                                      <div class="circle">3</div>
+                                    </div>
+                                    <button class="btnx" id="anterior" disabled>Anterior</button>
+                                    <button class="btnx" id="siguiente">Siguiente</button>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
 
 
 
@@ -442,24 +489,73 @@
   <script src="js/tooltips.js"></script>
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
+    (() => {
+      'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+  <script>
+    const progreso = document.getElementById('progreso');
+    const anterior = document.getElementById('anterior');
+    const siguiente = document.getElementById('siguiente');
+    const circles = document.querySelectorAll('.circle');
+
+    let currentActive = 1;
+
+    siguiente.addEventListener('click', () => {
+      currentActive++;
+
+      if(currentActive > circles.length){
+        currentActive = circles.length;
+      }
+      update();
+    });
+        
+     anterior.addEventListener('click', () => {
+      currentActive--;
+
+      if(currentActive < 1){
+        currentActive = 1;
+      }
+      update();
+    });
+
+      function update(){
+        circles.forEach((circle, index) => {
+          if(index < currentActive){
+            circle.classList.add('active-i');
+          } else {
+            circle.classList.remove('active-i')
+          }
+        });
+
+        const actives = document.querySelectorAll('.active-i');
+        progreso.style.width = ((actives.length -1) / (circles.length -1))*100 + '%';
+
+        if (currentActive === 1) {
+          anterior.disabled = true;
+        } else if (currentActive === circles.length){
+          siguiente.disabled = true;
+        } else{
+          anterior.disabled = false;
+          siguiente.disabled = false;
+        }
       }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
   </script>
   </body>
 </html>

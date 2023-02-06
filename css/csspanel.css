@@ -235,6 +235,9 @@
 	overflow: hidden;
 	cursor: pointer;
 }
+.profile-details:active{
+	transform: scale(0.98);
+}
 /*.profile-details__img {
 	width: 40px;
 	height: 40px;
@@ -639,7 +642,19 @@
 	font-size: 15px;
 	font-weight: 300;	
 }
-
+.iricbotf-detalle-motivo{
+	margin-top: 0.5rem;
+	max-height: 55px;
+	overflow-y: scroll;
+}
+.iricbotf-detalle-motivo__title{
+	font-size: 15px;
+	font-weight: 400;
+}
+.iricbotf-detalle-motivo__content{
+	font-size: 15px;
+    font-weight: 300;
+}
 
 /* Responsive */
 @media (max-width:1400px) {
@@ -749,4 +764,73 @@
 	}
 }
 
+
+
+/* BORRAR PRUEBA DE BARRA DE PROGRESO */
+
+.progreso-contenedor{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 30px;
+	max-width: 100%;
+	*width: 350px;
+}
+
+.progreso-contenedor::before{
+	content: '';
+	background: yellow;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	height: 4px;
+	width: 100%;
+	*z-index: -1;
+	transition: .4s;
+}
+.progreso{
+	background: red;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	height: 4px;
+	width: 0%;
+	*z-index: -1;
+	transition: .4s;
+}
+.circle{
+	background: silver;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:3px solid wheat;
+	z-index: 1;
+	transition: .4s;
+}
+.circle.active-i{
+	border-color: red;
+	background-color: red;
+}
+.circle.active-e{
+	background-color: green;
+}
+.btnx{
+	background-color: wheat;
+	border: 0;
+}
+.btnx:active{
+	transform: scale(0.98);
+}
+.btnx:focus{
+	outline: 0;
+}
+.btnx:disabled{
+	background: silver;
+	cursor: not-allowed;
+}
 

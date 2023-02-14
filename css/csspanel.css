@@ -726,6 +726,7 @@
 .btn-modal-expan button{
 	margin: 0 6px;
 }
+
 /* Responsive */
 @media (max-width:1400px) {
 	.v-mobil__box{
@@ -751,6 +752,13 @@
 		display: block;
 	}
 }
+
+@media (max-width:767px) {
+	.main__galletica{
+		display: none;
+	}
+}
+
 @media (max-width:576px) {
 	.aside{
 		left: -240px;
@@ -797,6 +805,7 @@
 	.main__body-modal-check{
 		display: inline-flex;
 	}
+
 	/* Index Reportes */
 	.index-reporte__reportes{
 		max-height: 768px;

@@ -865,6 +865,25 @@
 	.index-reporte_footer-2 a{
 		padding: 1rem 0 0;
 	}
+	.d-sm-movil{
+		display: none;
+	}
+	.modal-expan-descripcion{
+		margin-bottom: 2.4rem;
+		padding: 0;
+		border-radius: 0;
+		border: 0;
+		min-height: 220px;
+		max-height: 240px;
+		padding-right: 10px;
+	}
+	.btn-modal-expan{
+		margin-bottom: 1.8rem;
+	}
+	.btn-modal-expan button {
+		margin: 0;
+		font-size: 14px;
+	}
 }
 
 

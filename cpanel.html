@@ -162,6 +162,10 @@
                     </span>     
                   </div>
                   <div class="index-reporte__card-content">
+                    <div class="text-center card-content__search">
+                      <input class="form-control me-2 text-center card-content__input" type="search" placeholder="Buscar estudiante" name="">
+                      <i class="bi bi-search"></i>
+                    </div>
                     <div class="index-reporte__agg-card">
                       <i class="bi bi-circle-fill rojo"></i>
                       <span class="index-reporte__agg-card-estudiante">
@@ -239,79 +243,9 @@
                     <span class="tt" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Expandir">
                       <a class="nav-link" href="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expandir-detalle"><i class="fa-solid fa-expand"></i></a>
                     </span>
-                    <!-- Modal -->
-                    <div class="modal fade" id="expandir-detalle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div class="index-reporte-inf-content">
                     <div class="index-reporte-inf-content__box-top">
-                      <div class="index-reporte-inf-content__box-top-fecha">
-                        <div class="container">
-                          <div class="row iricbotf__tittle">
-                            <div class="col-lg-5 col-5">
-                              <span class="iricbotf__tittle-span">Profesor:</span> 
-                            </div>
-                            <div class="col-lg-5 col-4">
-                              <span class="iricbotf__tittle-span">Estudiante:</span> 
-                            </div>
-                            <div class="col-lg-2 col-3">
-                              <span class="iricbotf__tittle-span">Sección:</span> 
-                            </div>
-                          </div>
-                        </div>
-                        <div class="container">
-                          <div class="row iricbotf__person">
-                            <div class="col-lg-5 col-5">
-                              <div>
-                                <span class="iricbotf__person-span">Shogunato Villavicencio</span> 
-                              </div>
-                            </div>
-                            <div class="col-lg-5 col-5">
-                              <span class="iricbotf__person-span">Shogunato Villavicencio</span> 
-                            </div>
-                            <div class="col-lg-2 col-2">
-                              <span class="iricbotf__person-span">8vo</span> 
-                            </div>
-                          </div>
-                        </div>
-                        <div class="container">
-                          <div class="row iricbotf__data text-center">
-                            <div class="col">
-                              <div class="iricbotf__data-div">
-                                <span>Inicio:</span> 
-                                <span>05/02/2023</span>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="iricbotf__data-div">Proceso disciplinario</div>
-                            </div>
-                            <div class="col">
-                              <div class="iricbotf__data-div">Cierra en: <span>3</span> dias</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="container">
-                          <div class="iricbotf-detalle-motivo">
-                            <span class="iricbotf-detalle-motivo__title">Contexto:</span>
-                            <span class="iricbotf-detalle-motivo__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eos quas natus exercitationem dignissimos quod minima, officiis hic deleniti dolorum ducimus, in vitae impedit expedita facilis! Hic voluptatum, minima et.</span>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                     <!-- contenido detalle -->
                     <div class="index-reporte-inf-content__status">
@@ -320,9 +254,41 @@
                           <div class="status-report-details">
                             <div class="container text-center">
                               <div class="row">
-                                <div class="col-lg col">
-                                 
-                                  <div class="progreso-g">
+                                <div class="col-lg col col-movil">
+                                  <div class="d-flex justify-content-between status-report-sub">
+                                    <div>Otto Gonzalez - <span>8vo</span></div>
+                                    <div><span></span>Disciplinario</div>
+                                    <div>01/29/2023</div>
+                                  </div>
+                                  <div class="box-progreso">
+                                    <div class="barra-progreso padding-top d-flex justify-content-center">
+                                      <div class="pre-circulo text-end">
+                                        <button type="button" class="btn btn-primary pre-circulo__btn">Completado</button>
+                                      </div>
+                                      <div class="circulo-p">
+                                        <span class="rojo-box"><i class="fa-solid fa-xmark"></i></span>
+                                      </div>
+                                      <div class="pos-circulo">Citación del representante</div>
+                                    </div>
+                                    <div class="barra-progreso d-flex justify-content-center">
+                                      <div class="pre-circulo text-end">
+                                        <div>12/02/2023</div>
+                                        <div>10:00 Am</div>
+                                      </div>
+                                      <div class="circulo-p">
+                                        <span><i class="fa-solid fa-xmark"></i></span>
+                                      </div>
+                                      <div class="pos-circulo">Compromiso del representante</div>
+                                    </div>
+                                    <div class="barra-progreso padding-bottom d-flex justify-content-center justify-content-sm-center">
+                                      <div class="pre-circulo text-end">Por completar</div>
+                                      <div class="circulo-p pos-circulo-sm">
+                                        <span class="verde-box"><i class="fa-solid fa-check"></i></span>
+                                      </div>
+                                      <div class="pos-circulo">Cierre de incidencia</div>
+                                    </div>
+                                  </div>
+                                  <!-- <div class="progreso-g">
                                     <div class="progreso-contenedor">
                                       <div class="progreso" id="progreso"></div>
                                       <div class="circle active-i">1</div>
@@ -331,82 +297,23 @@
                                     </div>
                                     <button class="btnx" id="anterior" disabled>Anterior</button>
                                     <button class="btnx" id="siguiente">Siguiente</button>
-                                  </div>
-
-
+                                  </div> -->
                                 </div>
                               </div>
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <!--
-                            <ul class="navbar-nav">
-                              <li class="nav-item klxx">
-                                <div class="box-fecha-status-reporte">
-                                  <div>10, enero 2023</div>
-                                  <div>10:00 Am</div>
-                                </div>
-                                <div class="klxx__icon-estatus">
-                                  <i class="bi bi-x-circle-fill rojo"></i>
-                                </div>
-                                <div class="lineaxx">
-                                  
-                                </div>
-                                <div class="box-fecha-status-pro">Inicio de proceso</div>
-                              </li>
-                              <li class="nav-item klxx">
-                                <div class="box-fecha-status-reporte">
-                                  <div>10, enero 2023</div>
-                                  <div>10:00 Am</div>
-                                </div>
-                                <div class="klxx__icon-estatus">
-                                  <i class="bi bi-x-circle-fill rojo"></i>
-                                </div>
-                                <div class="lineaxx">
-
-                                </div>
-                                <div class="box-fecha-status-pro">Citacion de padre de familia</div>
-                              </li>
-                              <li class="nav-item klxx">
-                                <div class="box-fecha-status-reporte">
-                                  <div>10, enero 2023</div>
-                                  <div>10:00 Am</div>
-                                </div>
-                                <div class="klxx__icon-estatus">
-                                  <i class="bi bi-check-circle-fill verde"></i>
-                                </div>
-                                <div class="lineaxx">
-
-                                </div>
-                                <div class="box-fecha-status-pro">Actas acuerdos compromisos</div>
-                              </li>
-                            </ul>
-                            -->
                           </div>
                       </div>                     
                     </div>
                   </div>
-                  <div class="index-reporte_footer text-center">
+                  <div class="index-reporte_footer-2 index-reporte_footer-2 text-center">
                     <a class="nav-link tt" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href=""><div class="index-reporte-inf-content__box-top-sub">
                       <i class="bi bi-check-circle-fill verde"></i>
                       <span class="box__tramite-completo">Tramite completo</span>
                       <i class="bi bi-x-circle-fill rojo"></i>
                       <span>Tramite incompleto</span>
                     </div>
-                    </a>
-                  </div>
+                  </a>
+                </div>
                 </div>
               </div>
 

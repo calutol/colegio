@@ -23,8 +23,16 @@
 .rojo{
 	color: var(--rojo);
 }
+.rojo-box{
+	background-color: var(--rojo) !important;
+	color: var(--blanco) !important;
+}
 .verde{
 	color: var(--verde);
+}
+.verde-box{
+	background-color: var(--verde) !important;
+	color: var(--blanco) !important;
 }
 .amarillo{
 	color: var(--amarillo);
@@ -523,10 +531,25 @@
 	color: var(--btn-plus);
 	transition: all .3s;
 }
+.card-content__search {
+	position: relative;
+	margin-bottom: 1.4rem;
+}
+.card-content__search i{
+    position: absolute;
+    bottom: 5px;
+    left: 16px;
+    color: #9fa2a4;
+    font-size: 20px;
+}
 .index-reporte__card-content{
 	overflow-y: scroll;
 	padding: 1rem;
 	height: 344px;
+}
+.card-content__search .card-content__input{
+	border-radius: 30px;
+	border-color: #f0f1f3;
 }
 .index-reporte__agg-card{
 	display: flex;
@@ -576,84 +599,82 @@
 .index-reporte-inf-content{
 	height: 344px;
 }
-
-/* Caja detalle de reporte vision general */
-.index-reporte-inf-content__box-top{
-	width: 100%;
-}
-.index-reporte-inf-content__box-top-fecha{
-	padding: 1rem 0;
-}
-.box__tramite-completo{
-	padding-right: 1rem;
-}
-.index-reporte-inf-content__status{
-	margin-top: 1rem;
-}
-.index-reporte-inf-content__box-top-sub{
-	text-align: center;
-}
-.box-inf-content-index{
-}
-.klxx{
-	display: flex;
-	position: relative;
-	padding: 1rem 0rem;
-}
-.klxx__icon-estatus{
-	font-size: 20px;
-	z-index: 1;
-}
-.lineaxx{
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	background: #EEEEEE;
-	top: 0;
-	left: 133px;
-	padding-top: 10px;
-}
-.lineaxx::after{
-	content: '';
-	background-color: #EEEEEE;
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-}
-.box-fecha-status-reporte{
-	margin-right: 14px;
-}
-.box-fecha-status-pro{
-	margin-left: 14px;
-}
-.iricbotf__tittle-span{
+.status-report-sub{
+	margin: 1.4rem 0;
+	padding: .5rem;
 	font-size: 15px;
+	background-color: rgb(194 194 194 / 25%);
 }
-.iricbotf__person-span{
+/* Caja detalle de reporte vision general */
+.box-progreso{
+	padding: .5rem;
+}
+.barra-progreso{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	padding: 1.6rem 0;
+}
+.padding-top{
+	padding-top: 0;
+}
+.padding-bottom{
+	padding-bottom: 0;
+}
+.barra-progreso::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	height: 100%;
+	background-color: silver;
+	margin: auto;
+}
+.barra-progreso::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	height: 100%;
+	*background-color: red;
+	margin: auto;
+}
+.circulo-p{
+	position: relative;
+	*width: 33%;
+	width: 26%;
+	z-index: 2;
+}
+.circulo-p span{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #b6b8ba;
+	border-radius: 50%;
+	margin: auto;
+	font-size: 22px;
+	color: #dedfe1;
+	z-index: 2;
+}
+.pre-circulo{
+	width: 33%;
 	font-size: 15px;
 	font-weight: 300;
 }
-.iricbotf__data{
-	padding: .5rem 0;
-    margin-top: .5rem;
-    background: rgb(171 139 211 / 34%);
-}
-.iricbotf__data-div{
+.pos-circulo{
+	width: 33%;
 	font-size: 15px;
-	font-weight: 300;	
+	text-align: initial;
+	font-weight: 300;
 }
-.iricbotf-detalle-motivo{
-	margin-top: 0.5rem;
-	max-height: 55px;
-	overflow-y: scroll;
-}
-.iricbotf-detalle-motivo__title{
-	font-size: 15px;
-	font-weight: 400;
-}
-.iricbotf-detalle-motivo__content{
-	font-size: 15px;
-    font-weight: 300;
+.box__tramite-completo{
+	margin-right: 8px;
 }
 
 /* Responsive */
@@ -741,11 +762,6 @@
 	.index-reporte__agg-card i{
 		margin-right: 10px;
 	}
-	.iricbotf__tittle-span,
-	.iricbotf__person-span,
-	.iricbotf__data-div{
-		font-size: 14px;
-	}
 	.index-reporte-inf{
 		min-height: 468px;
 		margin-bottom: var(--margin-top);
@@ -753,14 +769,41 @@
 	.index-reporte_footer a{
 		padding: 1rem 0rem;
 	}
-	.index-reporte-inf-content__box-top-sub{
-		font-size: 14px;
-	}
 	.box__tramite-completo{
 		padding-right: .5rem;
 	}
 	.iricbotf__data{
 		text-align: initial !important;
+	}
+	.box-progreso{
+		padding: 0;
+	}
+	.col-movil{
+		padding: 0;
+	}
+	.status-report-sub{
+		font-size: 12px;
+		margin-bottom: 2.2rem;
+	}
+	/* Barra de progreso */
+	.pre-circulo{
+		font-size: 13px;
+	}
+	.pre-circulo__btn{
+		font-size: 14px;
+	}
+	.pos-circulo{
+		font-size: 13px;
+	}
+	.pos-circulo-sm{
+		margin-top: 10px;
+	}
+	.index-reporte_footer-2{
+		border-top: 2px solid #f0f1f3;
+		font-size: 12px;
+	}
+	.index-reporte_footer-2 a{
+		padding: 1rem 0rem;
 	}
 }
 

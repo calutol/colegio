@@ -692,7 +692,6 @@
 	font-size: 1.3rem;
 }
 .box-modal-expan-seccion,
-.modal-expan-motivo, 
 .modal-expan-descripcion{
 	margin-bottom: 1.4rem;
 }
@@ -707,6 +706,9 @@
 .modal-expan-subMotivo{
 	font-weight: 300;
 	padding-left: 4px;
+}
+.modal-expan-motivo{
+	margin-bottom: .5rem;
 }
 .modal-expan-descripcion{
 	min-height: 120px;

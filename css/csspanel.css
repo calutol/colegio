@@ -865,6 +865,12 @@
 	.index-reporte_footer-2 a{
 		padding: 1rem 0 0;
 	}
+	.modal-col-expan{
+		margin-bottom: 1rem;
+	}
+	.modal-expan-title__h1{
+		margin-top: 1.4rem;
+	}
 	.d-sm-movil{
 		display: none;
 	}
@@ -881,9 +887,8 @@
 	.modal-expan-representante__sub{
 		margin-left: 4px;
 	}
-
 	.modal-expan-descripcion{
-		margin-bottom: 2.4rem;
+		*margin-bottom: 2.4rem;
 		padding: 0;
 		border-radius: 0;
 		border: 0;
@@ -891,10 +896,11 @@
 		max-height: 240px;
 	}
 	.modal-expan-descripcion__p{
+		margin-bottom: 0;
 		padding-right: 10px;
 	}
 	.btn-modal-expan{
-		margin-bottom: 2.2rem;
+		margin-bottom: 1.4rem;
 	}
 	.btn-modal-expan button {
 		margin: 0;

@@ -575,6 +575,12 @@
 .index-reporte_footer a{
 	padding: 1rem;
 }
+.index-reporte_footer-2{
+	border-top: 2px solid #f0f1f3;
+}
+.index-reporte_footer-2 a{
+	padding: 1rem;
+}
 .index-reporte-inf{
 	margin-top: var(--margin-top);
 	padding: var(--padding-card);
@@ -748,10 +754,10 @@
 	.main__body-modal-check{
 		display: inline-flex;
 	}
-	.index-reporte__reportes{
-		max-height: 479px;
-	}
 	/* Index Reportes */
+	.index-reporte__reportes{
+		max-height: 768px;
+	}
 	.index-reporte__reportes-h3{
 		font-size: 17px;
 	}
@@ -767,7 +773,10 @@
 		margin-bottom: var(--margin-top);
 	}
 	.index-reporte_footer a{
-		padding: 1rem 0rem;
+		padding: 1rem 0 0 0;
+	}
+	.index-reporte__card-content{
+		height: auto;
 	}
 	.box__tramite-completo{
 		padding-right: .5rem;
@@ -799,11 +808,10 @@
 		margin-top: 10px;
 	}
 	.index-reporte_footer-2{
-		border-top: 2px solid #f0f1f3;
-		font-size: 12px;
+		font-size: 13px;
 	}
 	.index-reporte_footer-2 a{
-		padding: 1rem 0rem;
+		padding: 1rem 0 0;
 	}
 }
 

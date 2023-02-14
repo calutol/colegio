@@ -240,7 +240,7 @@
                 <div class="index-reporte-inf">
                   <div class="index-reporte-inf-title">
                     <h3 class="index-reporte-inf-title-h3">Detalle del proceso</h3>
-                    <span class="tt" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Expandir">
+                    <span class="tt" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Más detalles">
                       <a class="nav-link" href="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expandir-detalle"><i class="fa-solid fa-expand"></i></a>
                     </span>
                   </div>
@@ -260,10 +260,10 @@
                                     <div><span></span>Disciplinario</div>
                                     <div>01/29/2023</div>
                                   </div>
-                                  <div class="box-progreso">
+                                  <div class="box-progreso text-center">
                                     <div class="barra-progreso padding-top d-flex justify-content-center">
                                       <div class="pre-circulo text-end">
-                                        <button type="button" class="btn btn-primary pre-circulo__btn">Completado</button>
+                                        <button type="button" class="btn btn-primary pre-circulo__btn shadow-sm">Completado</button>
                                       </div>
                                       <div class="circulo-p">
                                         <span class="rojo-box"><i class="fa-solid fa-xmark"></i></span>
@@ -314,9 +314,115 @@
                     </div>
                   </a>
                 </div>
+                <!-- Modal -->
+                <div class="modal fade" id="expandir-detalle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Detalle del proceso</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <div class="modal-expan-title">
+                                <h1 class="modal-expan-title__h1 text-center">Descripción del caso</h1>
+                                <div class="box-modal-expan">
+                                  <div class="box-modal-expan-seccion">
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="modal-expan-profesor">
+                                          <div class="modal-expan-subTitle">Profesor</div>
+                                          <span class="modal-expan-profesor__span">Shogunato Vera Villavicencio</span>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                       <div class="modal-expan-fecha">
+                                        <div class="modal-expan-subTitle">Fecha</div>
+                                        <span class="modal-expan-fecha__span">20/03/2023</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="box-modal-expan-seccion">
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="modal-expan-estudiante">
+                                          <div class="modal-expan-subTitle">Estudiante de <span>(8vo)</span></div>
+                                          <span class="modal-expan-estudiante__span">Shogunato Vera Villavicencio</span>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="modal-expan-representante">
+                                          <div class="modal-expan-subTitle">Representante</div>
+                                          <span class="modal-expan-representante__span">Shogunato Vera Villavicencio</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-expan-motivo">
+                                    <span>Motivo:</span>
+                                    <span class="modal-expan-subMotivo">Disciplinario</span>
+                                  </div>
+                                  <div class="modal-expan-descripcion overflow-auto">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem omnis cum nam dolorum explicabo. Suscipit ea ratione expedita voluptatem, eum quidem, eius in ad, harum error, quas nemo laboriosam corrupti! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem omnis cum nam dolorum explicabo. Suscipit ea ratione expedita voluptatem, eum quidem, eius in ad, harum error, quas nemo laboriosam corrupti!</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="modal-expan-title">
+                                <h1 class="modal-expan-title__h1 text-center">Estado del proceso</h1>
+                              </div>
+                              <!-- Cominezo de linea de progreso -->
+                              <div class="box-progreso text-center">
+                                <div class="barra-progreso padding-top d-flex justify-content-center">
+                                  <div class="pre-circulo text-end">
+                                    <div>12/02/2023</div>
+                                    <div>10:00 Am</div>
+                                  </div>
+                                  <div class="circulo-p">
+                                    <span class="verde-box"><i class="fa-solid fa-check"></i></span>
+                                  </div>
+                                  <div class="pos-circulo">Citación del representante</div>
+                                </div>
+                                <div class="barra-progreso d-flex justify-content-center">
+                                  <div class="pre-circulo text-end">
+                                    <div>12/02/2023</div>
+                                    <div>10:00 Am</div>
+                                  </div>
+                                  <div class="circulo-p">
+                                    <span class="verde-box"><i class="fa-solid fa-check"></i></span>
+                                  </div>
+                                  <div class="pos-circulo">Compromiso del representante</div>
+                                </div>
+                                <div class="barra-progreso padding-bottom d-flex justify-content-center justify-content-sm-center">
+                                  <div class="pre-circulo text-end">Por completar</div>
+                                  <div class="circulo-p pos-circulo-sm">
+                                    <span class=""><i class="fa-solid fa-xmark"></i></span>
+                                  </div>
+                                  <div class="pos-circulo">Cierre de incidencia</div>
+                                </div>
+                              </div>
+                              <!-- Cominezo de botones -->
+                              <div class="btn-modal-expan text-center">
+                                <button type="button" class="btn btn btn-outline-primary"><i class="bi bi-pencil-square"></i> Editar</button>
+                                <button type="button" class="btn btn btn-outline-primary"><i class="bi bi-printer"></i> Imprimir</button>
+                                <button type="button" class="btn btn btn-outline-primary"><i class="bi bi-trash"></i> Borrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
-
             </div>
           </div>
 

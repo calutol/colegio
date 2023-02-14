@@ -868,6 +868,20 @@
 	.d-sm-movil{
 		display: none;
 	}
+	.modal-expan-profesor__span, 
+	.modal-expan-fecha__span, 
+	.modal-expan-estudiante__span, 
+	.modal-expan-representante__span, 
+	.modal-expan-subMotivo{
+		padding-left: 0;
+	}
+	.modal-expan-profesor__sub,
+	.modal-expan-fecha__sub,
+	.modal-expan-estudiante__sub,
+	.modal-expan-representante__sub{
+		margin-left: 4px;
+	}
+
 	.modal-expan-descripcion{
 		margin-bottom: 2.4rem;
 		padding: 0;

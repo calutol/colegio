@@ -686,7 +686,8 @@
 .pre-circulo__btn:active{
 	transform: scale(0.98);
 }
-.modal-expan-title__h1{
+.modal-expan-title__h1-to,
+.modal-expan-title__h1-bo{
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	font-size: 1.3rem;
@@ -868,8 +869,12 @@
 	.modal-col-expan{
 		margin-bottom: 1rem;
 	}
-	.modal-expan-title__h1{
+	.modal-expan-title__h1-to{
 		margin-top: 1.4rem;
+	}
+	.modal-expan-title__h1-bo{
+		margin-top: 0rem;
+		margin-bottom: 1.4rem;
 	}
 	.d-sm-movil{
 		display: none;
@@ -885,7 +890,7 @@
 	.modal-expan-fecha__sub,
 	.modal-expan-estudiante__sub,
 	.modal-expan-representante__sub{
-		margin-left: 4px;
+		margin: .5rem;
 	}
 	.modal-expan-descripcion{
 		*margin-bottom: 2.4rem;
@@ -905,6 +910,14 @@
 	.btn-modal-expan button {
 		margin: 0;
 		font-size: 14px;
+	}
+	.box-modal-expan-seccion{
+		margin-bottom: 0;
+	}
+	.modal-expan-motivo{
+		background-color: rgb(192 192 192 / 26%);
+		padding: 2px 6px;
+		margin-bottom: .8rem;
 	}
 }
 

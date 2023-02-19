@@ -12,6 +12,7 @@
 	--text-nav: #fff;
 	--hover-content: #fff;
 	--text-hover: #d5adff;
+	--li-hover: #0d6efd;
 	--text-focus: #333;
 	--focus-content: #fff;
 	--main-content: #f0f1f3;
@@ -481,12 +482,28 @@
 .main__body__modal-search{
 	position: relative;
 }
-.main__body__modal-search i{
+.main__body__modal-search .lupa{
 	position: absolute;
 	bottom: 6px;
 	left: 12px;
 	color: #9fa2a4;
 	font-size: 22px;
+}
+.box-registre-search{
+	width: 100%;
+	min-height: 100px;
+	*display: none;
+}
+.box-registre-search__li{
+	cursor: pointer;
+}
+.box-registre-search__li:hover{
+	background-color: var(--li-hover);
+	color: var(--blanco);
+	font-weight: 600;
+}
+.box-registre-search i{
+	margin-right: 10px;
 }
 .main__body .form-control{
 	border: 2px solid #dee2e6;
@@ -559,6 +576,9 @@
 	margin: 1rem 0rem;
 	font-size: 14px;
 	font-weight: 300;
+}
+.index-reporte__agg-card a:hover{
+	font-weight: 600;
 }
 .index-reporte__agg-card i{
 	font-size: 12px;

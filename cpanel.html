@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/prueba.css">
+  <script src="https://kit.fontawesome.com/a39f274e63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Contenedor General del Cpanel -->
+  <div class="container-fluid px-0 d-flex contenedor-c">
+    <!-- aside menu lateral -->
+    <div class="aside">
+      <div class="p-2 btn-close-c d-md-none d-lg-none d-sm-block d-flex justify-content-end"><i class="bi bi-x-lg me-2"></i></div>
+      <div class="nav-item d-flex align-items-center position-relative nav-brand">
+        <span class="ico-aside ico-brand"><i class="bi bi-browser-chrome"></i></span>
+        <span class="rut-aside aside-brand">Logo</span>
+      </div>
+      <hr class="aside__hr">
+      <div class="nav-item d-flex align-items-center position-relative nav-brand">
+        <a class="nav-link d-flex align-items-center" href="">
+          <span class="ico-aside"><i class="fa-solid fa-user-tie"></i></span>
+          <span class="rut-aside">Profesores</span>
+        </a>
+      </div>
+      <hr class="aside__hr">
+      <ul class="navbar-nav nav-ul">
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-user-pen"></i></span>
+            <span class="rut-aside">Reportes</span>
+            <span class="new-aside-notification">
+              <span class="new-aside-notification__span">45</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-clipboard-list"></i></span>
+            <span class="rut-aside">Agenda</span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-envelope-open-text"></i></span>
+            <span class="rut-aside">Anuncio</span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-clock"></i></span>
+            <span class="rut-aside">Horarios</span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-circle-play"></i></span>
+            <span class="rut-aside">Salon Virtual</span>
+            <span class="new-aside-notification">
+              <span class="new-aside-notification__span">45</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-user-gear"></i></span>
+            <span class="rut-aside">Mi Perfil</span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-user-gear"></i></span>
+            <span class="rut-aside">Ayuda</span>
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center position-relative nav-li">
+          <a class="nav-link nav-a d-flex align-items-center" href="">
+            <span class="ico-aside"><i class="fa-solid fa-right-from-bracket"></i></span>
+            <span class="rut-aside">Salir</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- fade menu movil -->
+    <div class="fadex-movil"></div>
+
+    <!-- main cuerpo general -->
+    <div class="main">
+      <!-- nav top -->
+      <nav class="container-fluid navb d-flex justify-content-between align-items-center px-4 shadow-sm">
+        <!-- boton menu aside -->
+        <div class="btn-c d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <!-- boton strike -->
+        <div class="strike-cards d-flex justify-content-center position-relative">
+          <a class="nav-link" href="">
+            <div class="strike-cards-y"></div>
+            <div class="strike-cards-z"></div>
+          </a>
+        </div>
+        <!-- logo version movil -->
+        <div class="d-lg-none d-sm-block nav-logo-mobil">
+          <img class="nav-logo-mobil__img" src="assets/img/logo-movil-720x854.png" alt="Instituto Ferrini Panama">
+        </div>
+        <!-- frase galletica -->
+        <div class="box-galletica d-none d-md-none d-lg-block position-relative text-center">
+          <span class="galletica-img">
+            <img class="img-fluid galletica-wh" src="assets/galleticas/galleta-de-la-suerte.png" alt="galleta de la suerte">
+          </span>
+          <span class="galletica-frase">
+            “Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo” - Benjamin Franklin
+          </span>
+        </div>
+        <!-- notificaciones -->
+        <div class="nav-bell position-relative">
+          <a class="nav-link" href="">
+            <i class="bi bi-bell"></i>
+            <span class="circle-bell"></span>
+          </a>
+        </div>
+        <!-- perfil de usuario -->
+        <div class="profile-user dropdown dropdowni">
+          <!-- box profile user -->
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-details d-flex align-items-center">
+              <div class="profile-details__box position-relative">
+                <div class="profile-details__box-img position-absolute">
+                  <img class="img-fluid profile-details__img position-absolute" src="assets/profiles/user.png" alt="foto de usuario">
+                </div>
+              </div>
+              <span class="profile-details__name-user mx-2 d-none d-md-block d-lg-block">Shogunato</span>
+              <i class="fa-solid fa-angle-down dropdowni-down"></i>
+            </div>
+          </a>
+          <!-- menu dropdown -->
+          <ul class="dropdown-menu dropdowni-menu shadow-sm">
+            <!-- version movil -->
+            <li class="nav-item v-mobil d-lg-none d-sm-block">
+              <div class="v-mobil__box">
+                <div class="v-mobil__nombre">Chogunato</div>
+                <div class="v-mobil__categoria">Profesor</div>
+              </div>
+            </li>
+            <hr class="dropdowni-menu__hr dropdowni-menu__hr-mobil d-lg-none d-sm-block">
+            <!-- fin verion movil -->
+            <li class="nav-item dropdowni-menu__li">
+              <a class="dropdown-item nav-link dropdowni-menu__a" href="#">
+                <i class="fa-solid fa-pen-to-square"></i>Editar Perfil
+              </a>
+            </li>
+            <hr class="dropdowni-menu__hr">
+            <li class="nav-item dropdowni-menu__li">
+              <a class="dropdown-item nav-link dropdowni-menu__a" href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>Desconectar
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- contenido del main -->
+      <div class="container-fluid px-4 px-sm-c-1 mt-5 mb-2">
+        <!-- index rapido -->
+        <div class="container-fluid text-center">
+            <div class="titulo mb-3 mb-sm-c-1 text-start">Cápsulas flash:</div>
+            <div class="p-lg-5 p-md-5 pxy-c-mobile border bg-light">
+              <div class="row row-cols-2 row-cols-lg-5 g-3 g-lg-3">
+              <div class="col">
+                <a class="nav-link" href="">
+                  <div class="p-3 border capsulas capsula-celeste d-flex justify-content-center align-items-center">
+                    <span class="capsulas__img mx-1"><img clas="img-fluid" src="assets/img/horario-de-trabajo.png" alt=""></span>
+                    <span class="capsulas__category mx-1">Planificacion</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="nav-link" href="">
+                  <div class="p-3 border capsulas capsula-amarillo d-flex justify-content-center align-items-center">
+                    <span class="capsulas__img mx-1"><img clas="img-fluid" src="assets/img/hora.png" alt=""></span>
+                    <span class="capsulas__category mx-1">Horarios</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="nav-link" href="">
+                  <div class="p-3 border capsulas capsula-rojo d-flex justify-content-center align-items-center">
+                    <span class="capsulas__img mx-1"><img clas="img-fluid" src="assets/img/reporte.png" alt=""></span>
+                    <span class="capsulas__category mx-1">Reportes</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="nav-link" href="">
+                  <div class="p-3 border capsulas capsula-verde d-flex justify-content-center align-items-center">
+                    <span class="capsulas__img mx-1"><img clas="img-fluid" src="assets/img/notas.png" alt=""></span>
+                    <span class="capsulas__category mx-1">Notas</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="nav-link" href="">
+                  <div class="p-3 border capsulas capsula-morado d-flex justify-content-center align-items-center">
+                    <span class="capsulas__img mx-1"><img clas="img-fluid" src="assets/img/notificaciones.png" alt=""></span>
+                    <span class="capsulas__category mx-1">Notificaciones</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="container-fluid mt-4">
+          <div class="titulo">Noticias de interes:</div>
+            <div class="row text-start">
+              <div class="col-12 my-3">
+                <div class="p-3 border bg-light position-relative article">
+                  <div class="cajon d-flex justify-content-between align-items-center">
+                    <div class="box-content-article">
+                      <div class="article-title ms-3 mb-3">Row column</div>
+                      <p class="contet-article ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae sit officia molestias aliquid deleniti voluptate repellendus tempore minima quos assumenda quas, quaerat minus nesciunt animi corporis accusamus. Neque, sapiente?</p>
+                    </div>
+                    <div class="box-content-img">
+                      <img class="img-fluid box-content-img__img" src="assets/img/atencion.png" alt="">
+                    </div>
+                  </div>
+                  <div class="mx-3 pt-2 text-muted article__footer">
+                    <small>
+                      <span>Shogunato Smith</span>
+                      <span>-</span>
+                      <span>23/07/2023</span>
+                      <span>a las</span>
+                      <span>10:00AM </span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="p-3 border bg-light position-relative article">
+                  <div class="cajon d-flex justify-content-between align-items-center">
+                    <div class="box-content-article">
+                      <div class="article-title ms-3 mb-3">Row column</div>
+                      <p class="contet-article ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae sit officia molestias aliquid deleniti voluptate repellendus tempore minima quos assumenda quas, quaerat minus nesciunt animi corporis accusamus. Neque, sapiente?</p>
+                    </div>
+                    <div class="box-content-img">
+                      <img class="img-fluid box-content-img__img" src="assets/img/atencion.png" alt="">
+                    </div>
+                  </div>
+                  <div class="mx-3 pt-2 text-muted article__footer">
+                    <small>
+                      <span>Shogunato Smith</span>
+                      <span>-</span>
+                      <span>23/07/2023</span>
+                      <span>a las</span>
+                      <span>10:00AM </span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="p-3 border bg-light position-relative article">
+                  <div class="cajon d-flex justify-content-between align-items-center">
+                    <div class="box-content-article">
+                      <div class="article-title ms-3 mb-3">Row column</div>
+                      <p class="contet-article ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae sit officia molestias aliquid deleniti voluptate repellendus tempore minima quos assumenda quas, quaerat minus nesciunt animi corporis accusamus. Neque, sapiente?</p>
+                    </div>
+                    <div class="box-content-img">
+                      <img class="img-fluid box-content-img__img" src="assets/img/atencion.png" alt="">
+                    </div>
+                  </div>
+                  <div class="mx-3 pt-2 text-muted article__footer">
+                    <small>
+                      <span>Shogunato Smith</span>
+                      <span>-</span>
+                      <span>23/07/2023</span>
+                      <span>a las</span>
+                      <span>10:00AM </span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="p-3 border bg-light position-relative article">
+                  <div class="cajon d-flex justify-content-between align-items-center">
+                    <div class="box-content-article">
+                      <div class="article-title ms-3 mb-3">Row column</div>
+                      <p class="contet-article ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae sit officia molestias aliquid deleniti voluptate repellendus tempore minima quos assumenda quas, quaerat minus nesciunt animi corporis accusamus. Neque, sapiente?</p>
+                    </div>
+                    <div class="box-content-img">
+                      <img class="img-fluid box-content-img__img" src="assets/img/atencion.png" alt="">
+                    </div>
+                  </div>
+                  <div class="mx-3 pt-2 text-muted article__footer">
+                    <small>
+                      <span>Shogunato Smith</span>
+                      <span>-</span>
+                      <span>23/07/2023</span>
+                      <span>a las</span>
+                      <span>10:00AM </span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <footer class=" container-fluid text-muted text-end">
+      <small class="pe-4">Versión 1.1.23</small>
+    </footer>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/attrchange.js"></script>
+  <script type="text/javascript" src="js/general1.js"></script>
+</body>
+</html>

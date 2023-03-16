@@ -93,7 +93,7 @@ body{
 		background-color: #fff;
 		display: block;
 		height: 100vh;
-		padding-top: 2rem !important;
+		padding-top: 1rem !important;
 		overflow: hidden;
 	}
 	.box-login{
@@ -110,6 +110,6 @@ body{
 		padding: 0.8rem;
 	}
 	.box-svg__svg{
-		top: -26px;
+		top: 0px;
 	}
 }

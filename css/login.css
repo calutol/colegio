@@ -98,7 +98,7 @@ body{
 	}
 	.box-login{
 		background-color: transparent !important;
-		height: auto;
+		height: 100vh;
 		width: 90%;
 		margin: auto;
 		box-shadow: none !important;
